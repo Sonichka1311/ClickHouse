@@ -337,7 +337,7 @@ Field DataTypeEnum<Type>::castToValue(const Field & value_or_name) const
     else if (value_or_name.getType() == Field::Types::Int64
           || value_or_name.getType() == Field::Types::UInt64)
     {
-        Int64 value = value_or_name.get<Int64>();
+        auto value = castField<Int64>(value_or_name);
         checkOverflow<Type>(value);
         getNameForValue(static_cast<Type>(value)); /// Check correctness
         return value;
