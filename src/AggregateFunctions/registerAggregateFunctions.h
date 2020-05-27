@@ -46,6 +46,7 @@ void registerAggregateFunctionCombinatorNull(AggregateFunctionCombinatorFactory 
 void registerAggregateFunctionCombinatorOrFill(AggregateFunctionCombinatorFactory &);
 void registerAggregateFunctionCombinatorResample(AggregateFunctionCombinatorFactory &);
 void registerAggregateFunctionCombinatorDistinct(AggregateFunctionCombinatorFactory &);
+void registerAggregateFunctionCombinatorOrderBy(AggregateFunctionCombinatorFactory &);
 
 void registerAggregateFunctions();
 

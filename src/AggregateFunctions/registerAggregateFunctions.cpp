@@ -59,6 +59,7 @@ void registerAggregateFunctions()
         registerAggregateFunctionCombinatorOrFill(factory);
         registerAggregateFunctionCombinatorResample(factory);
         registerAggregateFunctionCombinatorDistinct(factory);
+        registerAggregateFunctionCombinatorOrderBy(factory);
     }
 }
 
